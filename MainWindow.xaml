@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:DataGridContextMenuViewModel />
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
@@ -19,5 +23,28 @@
         <StackPanel Grid.Row="1">
             <Button Content="Click" Click="RestartButton_Click" />
         </StackPanel>
+        <DataGrid Grid.Row="2"
+                x:Name="MyDataGrid"
+                ItemsSource="{Binding DataItems}"
+                SelectionUnit="Cell"
+                MouseRightButtonDown="DataGrid_MouseRightButtonDown"
+                AutoGenerateColumns="False"
+                CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="序号" Binding="{Binding Id, Mode=TwoWay}" Width="60" />
+                <DataGridTextColumn Header="商品名称" Binding="{Binding Name, Mode=TwoWay}" Width="*" />
+                <DataGridTextColumn Header="价格（元）" Binding="{Binding Price, Mode=TwoWay, StringFormat=F2}" Width="100" />
+                <DataGridTextColumn Header="创建时间" Binding="{Binding CreateTime, Mode=TwoWay, StringFormat=yyyy-MM-dd}" Width="120" />
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu ItemsSource="{Binding ContextMenuItems}">
+                    <ContextMenu.ItemTemplate>
+                        <DataTemplate>
+                            <MenuItem Header="{Binding Header}" Command="{Binding Command}" />
+                        </DataTemplate>
+                    </ContextMenu.ItemTemplate>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
     </Grid>
 </Window>
