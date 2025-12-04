@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Threading;
@@ -558,6 +559,42 @@ namespace WpfApp2
                 if (obj is T t) return t;
                 obj = VisualTreeHelper.GetParent(obj);
             }
+            return null;
+        }
+
+        private T FindVisualChild<T>(DependencyObject obj, Func<T, bool> predicate) where T : DependencyObject
+        {
+            if (obj == null) return null;
+
+            // 初始化队列，存储待遍历的视觉树节点（BFS核心）
+            Queue<DependencyObject> queue = new Queue<DependencyObject>();
+            queue.Enqueue(obj);
+
+            while (queue.Count > 0)
+            {
+                // 出队当前节点，处理其所有直接子节点
+                DependencyObject currentObj = queue.Dequeue();
+                int childCount = VisualTreeHelper.GetChildrenCount(currentObj);
+
+                for (int i = 0; i < childCount; i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(currentObj, i);
+
+                    // 检查子节点是否是目标类型且满足谓词
+                    if (child is T target)
+                    {
+                        if (predicate == null || predicate(target))
+                        {
+                            return target; // 找到匹配项，直接返回
+                        }
+                    }
+
+                    // 将子节点入队，后续处理其下一级子节点（BFS关键）
+                    queue.Enqueue(child);
+                }
+            }
+
+            // 遍历完所有节点未找到匹配项
             return null;
         }
     }
