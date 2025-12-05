@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Avalonia.11.3.9\build\Avalonia.props" Condition="Exists('packages\Avalonia.11.3.9\build\Avalonia.props')" />
   <Import Project="packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props" Condition="Exists('packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props')" />
   <Import Project="packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.props" Condition="Exists('packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.props')" />
   <Import Project="packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.props" Condition="Exists('packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.props')" />
@@ -55,8 +56,53 @@
     <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
       <HintPath>packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
     </Reference>
+    <Reference Include="Avalonia, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Base, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Controls, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.DesignerSupport, Version=0.7.0.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.DesignerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Dialogs, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Markup, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Markup.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Markup.Xaml, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Markup.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Metal, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Metal.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.MicroCom, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.MicroCom.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.OpenGL, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.OpenGL.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Remote.Protocol, Version=11.3.9.0, Culture=neutral, PublicKeyToken=7ecde292c616a9f3, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.Remote.Protocol.11.3.9\lib\netstandard2.0\Avalonia.Remote.Protocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Skia, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.Skia.11.3.9\lib\netstandard2.0\Avalonia.Skia.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Themes.Fluent, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.Themes.Fluent.11.3.9\lib\netstandard2.0\Avalonia.Themes.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="Avalonia.Vulkan, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
+      <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Vulkan.dll</HintPath>
+    </Reference>
     <Reference Include="CommunityToolkit.Mvvm, Version=8.4.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
       <HintPath>packages\CommunityToolkit.Mvvm.8.4.0\lib\netstandard2.0\CommunityToolkit.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>packages\HarfBuzzSharp.8.3.1.2\lib\net462\HarfBuzzSharp.dll</HintPath>
     </Reference>
     <Reference Include="ILNumerics.Computing, Version=7.3.0.0, Culture=neutral, PublicKeyToken=8d9bf50ef854734d, processorArchitecture=MSIL">
       <HintPath>packages\ILNumerics.Computing.7.3.61\lib\net461\ILNumerics.Computing.dll</HintPath>
@@ -79,17 +125,20 @@
     <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MathNet.Numerics.5.0.0\lib\net48\MathNet.Numerics.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="MicroCom.Runtime, Version=0.11.3.0, Culture=neutral, PublicKeyToken=b30be05a5f7688e9, processorArchitecture=MSIL">
+      <HintPath>packages\MicroCom.Runtime.0.11.3\lib\netstandard2.0\MicroCom.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.Numerics, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.Numerics.9.0.4\lib\net462\Microsoft.Bcl.Numerics.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.10.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis, Version=4.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.14.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.Numerics.10.0.0\lib\net462\Microsoft.Bcl.Numerics.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.14.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Common.5.0.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.5.0.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ML.CpuMath, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.ML.CpuMath.5.0.0\lib\netstandard2.0\Microsoft.ML.CpuMath.dll</HintPath>
@@ -100,34 +149,41 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SkiaSharp, Version=3.119.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>packages\SkiaSharp.3.119.1\lib\net462\SkiaSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.CodeDom, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.CodeDom.6.0.0\lib\net461\System.CodeDom.dll</HintPath>
+    <Reference Include="System.CodeDom, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.CodeDom.10.0.0\lib\net462\System.CodeDom.dll</HintPath>
     </Reference>
-    <Reference Include="System.Collections.Immutable, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Collections.Immutable.9.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    <Reference Include="System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.10.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.10.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.OracleClient" />
-    <Reference Include="System.Diagnostics.EventLog, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.EventLog.5.0.1\lib\net461\System.Diagnostics.EventLog.dll</HintPath>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.10.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
-    <Reference Include="System.Diagnostics.PerformanceCounter, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.PerformanceCounter.6.0.1\lib\net461\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    <Reference Include="System.Diagnostics.EventLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.EventLog.10.0.0\lib\net462\System.Diagnostics.EventLog.dll</HintPath>
     </Reference>
-    <Reference Include="System.Drawing.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Drawing.Common.6.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    <Reference Include="System.Diagnostics.PerformanceCounter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.PerformanceCounter.10.0.0\lib\net462\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.10.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -135,34 +191,34 @@
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Tensors, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Numerics.Tensors.9.0.4\lib\net462\System.Numerics.Tensors.dll</HintPath>
+    <Reference Include="System.Numerics.Tensors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Tensors.10.0.0\lib\net462\System.Numerics.Tensors.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Reflection.Metadata, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Reflection.Metadata.9.0.0\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    <Reference Include="System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.Metadata.10.0.0\lib\net462\System.Reflection.Metadata.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Security" />
-    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.6.0.1\lib\net461\System.Security.AccessControl.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    <Reference Include="System.Security.Permissions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Permissions.10.0.0\lib\net462\System.Security.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceProcess" />
-    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Encoding.CodePages.7.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    <Reference Include="System.Text.Encoding.CodePages, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.10.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
@@ -183,6 +239,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DataCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -190,6 +250,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCell.xaml.cs">
+      <DependentUpon>DataCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -239,9 +302,22 @@
     <Error Condition="!Exists('packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props'))" />
     <Error Condition="!Exists('packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Accord.3.8.0\build\Accord.targets'))" />
     <Error Condition="!Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets'))" />
+    <Error Condition="!Exists('packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets'))" />
+    <Error Condition="!Exists('packages\Avalonia.11.3.9\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.3.9\build\Avalonia.props'))" />
+    <Error Condition="!Exists('packages\Avalonia.11.3.9\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.3.9\build\Avalonia.targets'))" />
+    <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets'))" />
+    <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
   </Target>
   <Import Project="packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.targets" Condition="Exists('packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.targets')" />
   <Import Project="packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets" Condition="Exists('packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets')" />
   <Import Project="packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('packages\Accord.3.8.0\build\Accord.targets')" />
   <Import Project="packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
+  <Import Project="packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets" Condition="Exists('packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets')" />
+  <Import Project="packages\Avalonia.11.3.9\build\Avalonia.targets" Condition="Exists('packages\Avalonia.11.3.9\build\Avalonia.targets')" />
+  <Import Project="packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets')" />
+  <Import Project="packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+  <Import Project="packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
 </Project>
