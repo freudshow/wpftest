@@ -58,33 +58,43 @@
     </Reference>
     <Reference Include="Avalonia, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Base, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Base.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Controls, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Controls.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.DesignerSupport, Version=0.7.0.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.DesignerSupport.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Dialogs, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Dialogs.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Markup, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Markup.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Markup.Xaml, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Markup.Xaml.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Metal, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Metal.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.MicroCom, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.MicroCom.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.OpenGL, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.OpenGL.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Avalonia.Remote.Protocol, Version=11.3.9.0, Culture=neutral, PublicKeyToken=7ecde292c616a9f3, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.Remote.Protocol.11.3.9\lib\netstandard2.0\Avalonia.Remote.Protocol.dll</HintPath>
@@ -97,9 +107,13 @@
     </Reference>
     <Reference Include="Avalonia.Vulkan, Version=11.3.9.0, Culture=neutral, PublicKeyToken=c8d484a7012f9a8b, processorArchitecture=MSIL">
       <HintPath>packages\Avalonia.11.3.9\lib\netstandard2.0\Avalonia.Vulkan.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CommunityToolkit.Mvvm, Version=8.4.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
       <HintPath>packages\CommunityToolkit.Mvvm.8.4.0\lib\netstandard2.0\CommunityToolkit.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridExtensions, Version=2.9.1.0, Culture=neutral, PublicKeyToken=43de855f87de903a, processorArchitecture=MSIL">
+      <HintPath>packages\DataGridExtensions.2.9.1\lib\net462\DataGridExtensions.dll</HintPath>
     </Reference>
     <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\HarfBuzzSharp.8.3.1.2\lib\net462\HarfBuzzSharp.dll</HintPath>
@@ -128,8 +142,8 @@
     <Reference Include="MicroCom.Runtime, Version=0.11.3.0, Culture=neutral, PublicKeyToken=b30be05a5f7688e9, processorArchitecture=MSIL">
       <HintPath>packages\MicroCom.Runtime.0.11.3\lib\netstandard2.0\MicroCom.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.10.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.10.0.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.Numerics.10.0.0\lib\net462\Microsoft.Bcl.Numerics.dll</HintPath>
@@ -146,8 +160,14 @@
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.142\lib\net462\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReoGrid.Mvvm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ReoGrid.Mvvm.1.0.0\lib\net46\ReoGrid.Mvvm.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp, Version=3.119.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\SkiaSharp.3.119.1\lib\net462\SkiaSharp.dll</HintPath>
@@ -175,16 +195,17 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Diagnostics.DiagnosticSource.10.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
-    <Reference Include="System.Diagnostics.EventLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Diagnostics.EventLog.10.0.0\lib\net462\System.Diagnostics.EventLog.dll</HintPath>
+    <Reference Include="System.Diagnostics.EventLog, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.EventLog.10.0.5\lib\net462\System.Diagnostics.EventLog.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.PerformanceCounter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Diagnostics.PerformanceCounter.10.0.0\lib\net462\System.Diagnostics.PerformanceCounter.dll</HintPath>
     </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Drawing.Common.10.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
+      <HintPath>packages\System.Drawing.Common.10.0.5\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
@@ -229,6 +250,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="unvell.ReoGrid, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\unvell.ReoGridWPF.dll.2.1.0.0\lib\20\unvell.ReoGrid.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -301,23 +325,23 @@
     <Error Condition="!Exists('packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets'))" />
     <Error Condition="!Exists('packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.ML.CpuMath.5.0.0\build\netstandard2.0\Microsoft.ML.CpuMath.props'))" />
     <Error Condition="!Exists('packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Accord.3.8.0\build\Accord.targets'))" />
-    <Error Condition="!Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets'))" />
     <Error Condition="!Exists('packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets'))" />
-    <Error Condition="!Exists('packages\Avalonia.11.3.9\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.3.9\build\Avalonia.props'))" />
     <Error Condition="!Exists('packages\Avalonia.11.3.9\build\Avalonia.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.3.9\build\Avalonia.targets'))" />
     <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets'))" />
     <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
     <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('packages\Avalonia.11.3.9\build\Avalonia.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Avalonia.11.3.9\build\Avalonia.props'))" />
+    <Error Condition="!Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets'))" />
     <Error Condition="!Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
   </Target>
   <Import Project="packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.targets" Condition="Exists('packages\ILNumerics.Tools.CodeTransforms.7.3.61\build\net461\ILNumerics.Tools.CodeTransforms.targets')" />
   <Import Project="packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets" Condition="Exists('packages\ILNumerics.Accelerator.Command.7.3.61\build\net461\ILNumerics.Accelerator.Command.targets')" />
   <Import Project="packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('packages\Accord.3.8.0\build\Accord.targets')" />
-  <Import Project="packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
   <Import Project="packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets" Condition="Exists('packages\Avalonia.BuildServices.11.3.2\build\Avalonia.BuildServices.targets')" />
   <Import Project="packages\Avalonia.11.3.9\build\Avalonia.targets" Condition="Exists('packages\Avalonia.11.3.9\build\Avalonia.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Linux.3.119.1\build\net462\SkiaSharp.NativeAssets.Linux.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.1\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
   <Import Project="packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.1\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+  <Import Project="packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
   <Import Project="packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
 </Project>
